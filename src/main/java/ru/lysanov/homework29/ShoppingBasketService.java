@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Set;
 
 @Service
-@Scope("prototype")
+@Scope("session")
 public interface ShoppingBasketService {
 
     void addItem(List<Integer> Items);
