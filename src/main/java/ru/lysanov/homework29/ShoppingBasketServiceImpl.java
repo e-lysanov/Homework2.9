@@ -12,13 +12,11 @@ import java.util.Set;
 @Scope("session")
 public class ShoppingBasketServiceImpl implements ShoppingBasketService {
 
-//    Set<Integer> ShoppingBasket = new HashSet<>();
-
-    List<List<Integer>> ShoppingBasket = new ArrayList<>();
+    List<Integer> ShoppingBasket = new ArrayList<>();
 
     @Override
     public void addItem(List<Integer> Items) {
-        ShoppingBasket.add(Items);
+        ShoppingBasket.addAll(Items);
     }
 
     @Override
