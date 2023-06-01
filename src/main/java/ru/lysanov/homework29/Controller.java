@@ -1,5 +1,6 @@
 package ru.lysanov.homework29;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -10,6 +11,7 @@ import java.util.Set;
 
 @RequestMapping(path = "/order")
 @RestController
+@Scope("session")
 public class Controller {
 
     private final ShoppingBasketService shoppingBasketService;

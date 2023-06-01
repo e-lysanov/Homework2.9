@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Set;
 
 @Service
-@Scope("prototype")
+@Scope("session")
 public class ShoppingBasketServiceImpl implements ShoppingBasketService {
 
 //    Set<Integer> ShoppingBasket = new HashSet<>();
